@@ -2,12 +2,26 @@ import "./contact.css";
 import Phone from "../../img/phone.png";
 import Email from "../../img/email.png";
 import Address from "../../img/address.png";
-import {useRef} from "react";
+import {useContext, useRef, useState} from "react";
+import emailjs from 'emailjs-com';
+import { ThemeContext } from "../../context";
 
 const Contact = () => {
-    const formRef = useRef
+    const formRef = useRef();
+    const [done, setDone] = useState(false);
+    const theme = useContext(ThemeContext);
+    const darkMode = theme.state.darkMode;
+
     const handleSubmit = (e) => {
         e.preventDefault()
+
+        emailjs.sendForm('service_0f95h83', 'template_wnfb6ni', formRef.current, 'user_lz6HxNs2qEOpcNzCTWpa6')
+      .then((result) => {
+          console.log(result.text);
+          setDone(true);
+      }, (error) => {
+          console.log(error.text);
+      });
     }
     return (
         <div className="c">
@@ -42,6 +56,7 @@ const Contact = () => {
                         <input type="text" placeholder="Email" name="user_email" />
                         <textarea name="message" placeholder="Message" id="" cols="30" rows="5"></textarea>
                         <button>Submit</button>
+                        {done && "Thank you"}
                     </form>
                 </div>
             </div>
