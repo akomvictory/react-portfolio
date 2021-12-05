@@ -10,17 +10,21 @@ const Intro = () => {
                     <h1 className="i-name">Victory Akom</h1>
                     <div className="i-title">
                         <div className="i-title-wrapper">
-                            <div className="i-title-item">Web Developer</div>
-                            <div className="i-title-item">UI/UX Designer </div>
-                            <div className="i-title-item">Photographer</div>
+                            <div className="i-title-item">Mern Stack</div>
+                            <div className="i-title-item">IT Instructor</div>
+                            <div className="i-title-item">Digital Marketer</div>
                             <div className="i-title-item">Writer</div>
                             <div className="i-title-item">Content Creator</div>
                         </div> 
                     </div>
                     <p className="i-desc">
-                        I design and develop services for custmers
-                        of all sizes, specializing in creating stylish,
-                        modern websites, web services, online stores
+                    Becoming a good programmer requires more
+                     than just writig code. To “be a good 
+                     programmer” requires persistence, passion.
+                      and a desire to contribute to the techverse. So believe you
+                       can and you are halfway there. 
+                        You stand up and you stand out.
+                       
                     </p>
                 </div>
                 <svg

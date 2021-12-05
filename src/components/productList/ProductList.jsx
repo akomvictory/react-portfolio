@@ -6,11 +6,13 @@ const ProductList = () => {
   return (
     <div className="pl">
       <div className="pl-texts">
-        <h1 className="pl-title">Create & inspire. It's Lama</h1>
+        <h1 className="pl-title">Create & inspire. It's Akom</h1>
         <p className="pl-desc">
-          Lama is a creative portfolio that your work has been waiting for.
-          Beautiful homes, stunning portfolio styles & a whole lot more awaits
-          inside.
+        Designing high-performance web applications using 
+        cutting-edge technologies.
+        APIs Integration (Paypal, socialoAuth etc),
+        Responsive web designs,
+        Web hosting and Cpanel configuration.
         </p>
       </div>
       <div className="pl-list">
